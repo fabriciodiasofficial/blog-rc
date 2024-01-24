@@ -1,0 +1,17 @@
+{
+    "name": "teodoro/rc",
+    "autoload": {
+        "psr-4": {
+            "Teodoro\\Rc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "FABRICIO DIAS",
+            "email": "fabriciodias97.ti@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.8"
+    }
+}
