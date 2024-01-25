@@ -18,7 +18,14 @@
 				$controller = 'ErroController';
 			}
 
-			call_user_func_array(array(new $controller, $acao), array());
+			if(isset($urlGet['id']) && $urlGet['id'] != null){
+				$id = $urlGet['id'];
+			}else{
+				$id = null;
+			}
+			//Não pega
+			// call_user_func_array(array(new $controller, $acao), array('id' => $id));
+			call_user_func_array(array(new $controller, $acao), array($id));
 
 
 		}
