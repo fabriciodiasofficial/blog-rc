@@ -38,9 +38,6 @@
 			}else{
 				$resultado->comentarios = Comentario::selecionarComentarios($resultado->id);
 
-				if (!$resultado->comentarios){
-					$resultado->comentarios = 'Não existe nenhum comentário para esta postagem!';
-				}
 			}
 
 			return $resultado;
